@@ -1,0 +1,9 @@
+{
+  "name": "connect-four",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  }
+}
