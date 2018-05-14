@@ -1,16 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Input = ({rows}) => {
-  return (<div>{
-    rows.map((row, index) => {
-      return <input type='button' key={index}/>
-    })
-  }</div>)
+const Input = ({rowCount}) => {
+  const createOptions = (rc) => {
+    const options = [];
+    for (let i = 0; i < rc; i++) {
+      options.push(<input type='button' key={i}/>)
+    }
+    return options;
+  }
+
+  return (<div>{createOptions(rowCount)}</div>)
 }
 
 Input.propTypes = {
-  rows: PropTypes.array.isRequired,
+  rowCount: PropTypes.number.isRequired,
 }
 
 export default Input

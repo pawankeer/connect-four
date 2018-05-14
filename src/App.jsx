@@ -18,13 +18,12 @@ class App extends Component {
       columns.push(rows)
     }
 
-    console.log(columns)
-    this.state = {board: columns, rowCount, rows}
+    this.state = {board: columns, rowCount}
   }
 
   render () {
     return (<div>
-      <Input rows={this.state.rows}/>
+      <Input rowCount={this.state.rowCount}/>
       <Board board={this.state.board}/>
     </div>)
   }
