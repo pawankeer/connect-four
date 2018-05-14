@@ -1,9 +1,15 @@
 {
   "name": "connect-four",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "react-scripts start"
   },
   "devDependencies": {
-    "mocha": "^5.1.1"
+    "mocha": "^5.1.1",
+    "react-scripts": "^1.1.4"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7"
   }
 }
