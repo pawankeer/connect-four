@@ -5,7 +5,7 @@ import Row from './row'
 const Board = ({board}) => {
   return (
     <div>
-      <table>
+      <table cellSpacing="5">
         <tbody>
         {
           board.map((row, index) => {
