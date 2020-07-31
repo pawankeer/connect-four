@@ -4,7 +4,7 @@
     "start": "react-scripts start"
   },
   "devDependencies": {
-    "mocha": "^5.1.1",
+    "mocha": "^8.1.0",
     "react-scripts": "^1.1.4"
   },
   "dependencies": {
